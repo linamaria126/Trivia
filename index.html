@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia</title>
+</head>
+<body>
+    <div class="intro">
+
+        
+
+    
+        <div class="bienvenida" id="bienvenida">
+            <h1  id="saludo" class="saludo">
+                
+            </h1>
+
+            <div class="instrucciones">
+
+                <p >A continuación verás una serie de preguntas de geografía,<br> 
+                    deberás escoger la respuesta que consideres correcta.</p><br><br>
+
+            </div>
+            
+            
+            
+            
+
+            <input type="button" class="boton" onclick="preguntas()"  value="Empezar"><br><br>
+    
+        </div>
+        
+    </div>
+
+    <div class="questions" id="questions">
+        <header>
+            <h1>TRIVIA</h1>
+            <p>Juego de Geografía</p>
+        </header>
+
+        <div class="container">
+            <section>
+                <h3 id="p0">1. Escoge cual de estas parejas de países pertenecen a America Latina? </h3>
+                <input type="radio" id="p0" name="p0" value="1" onclick="respuesta">
+                <label for="roja">Colombia y Perú</label><br><br>
+
+                <input type="radio" id="p0" name="p0" value="2">
+                <label for="roja">Alemania e Inglaterra</label><br><br>
+
+                <input type="radio" id="p0" name="p0" value="3">
+                <label for="roja">Turquía y China</label><br><br>
+
+            </section>
+            
+        </div>
+
+        <button onclick="verificar()">Verificar</button>
+        <h2>Acertó</h2>
+       
+
+    </div>
+    
+    
+
+    
+
+
+	<div id="app"></div>
+
+	<script src="index.js">
+	</script>
+    
+</body>
+</html>
