@@ -98,7 +98,8 @@ button:hover{
     display:none;
 }
 
-#Resultado h1{
+.resultado{
+    color:#000;
     color: white;
     text-align: center;
 }

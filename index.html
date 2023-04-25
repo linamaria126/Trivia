@@ -43,32 +43,45 @@
 
         <div class="container">
 
-            <form id="p1">
-                <section>
-                    <h3 id="p0">1. Escoge cual de estas parejas de países pertenecen a America Latina? </h3>
-                    <input type="radio" id="r0" name="p0" value="1" onclick="respuesta">
-                    <label for="roja">Colombia y Perú</label><br><br>
-    
-                    <input type="radio" id="r1" name="p0" value="2">
-                    <label for="roja">Alemania e Inglaterra</label><br><br>
-    
-                    <input type="radio" id="r2" name="p0" value="3">
-                    <label for="roja">Turquía y China</label><br><br>
-                </section>
-            </form>
+            
+            <section>
+                <h3 id="p0">1. Escoge cual de estas parejas de países pertenecen a America Latina? </h3>
+                <input type="radio" id="r0" name="p0" value="1" onclick="respuesta(0,this)">
+                <label>Colombia y Perú</label><br><br>
+
+                <input type="radio" id="r1" name="p0" value="2" onclick="respuesta(0,this)">
+                <label>Alemania e Inglaterra</label><br><br>
+
+                <input type="radio" id="r2" name="p0" value="3" onclick="respuesta(0,this)">
+                <label>Turquía y China</label><br><br>
+            </section>
+            <section>
+                <h3 id="p1">2. Cual de los siguientes es la ciudad más poblada? </h3>
+                <input type="radio" id="r0" name="p1" value="1" onclick="respuesta(1,this)">
+                <label>Cali</label><br><br>
+
+                <input type="radio" id="r1" name="p1" value="2" onclick="respuesta(1,this)">
+                <label>Bogotá</label><br><br>
+
+                <input type="radio" id="r2" name="p1" value="3" onclick="respuesta(1,this)">
+                <label>Bridgetown</label><br><br>
+            </section>
+            
             
             
         </div>
 
         <button onclick="verificar()">Verificar</button>
-        <h2>Acertó</h2>
+        <div class="resultado">
+            <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+        </div>
+        
        
 
     </div>
     
     
-
-    
+   
 
 
 	
