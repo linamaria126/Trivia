@@ -1,5 +1,3 @@
-
-
 var nombre = prompt("Digita tu nombre");
 var nombre = "Lina";
 document.getElementById("saludo").innerHTML = "Hola " + nombre + " Bienvenido a la Trivia 'Viajando por el mundo' ";
